@@ -1,22 +1,19 @@
 extends ../base/base
 
 block content
-  div.container-wrapper
-    div.jumbotron
-      div.container 
-        h1 连接你我 共生未来
-        p sdfsdfsdfs
-        p
-          a.btn.btn-success.btn-lg(href="#", role="button") leran more
+  div.jumbotron
+    div.container 
+      h1 连接你我 共生未来
+      p#a-desc 教育的重新定义
 
   
   div.container-wrapper
     div.container
-      h1 以互联网为基础的科技及文化公司
-      h3 1998年11月诞生于中国深圳，是一家以互联网为基础的科技与文化公司
-      h3 我们的使命是 “通过互联网服务提升人类生活品质”。
-      h3 腾讯秉承着 “一切以用户价值为依归” 的经营理念，致力于为亿万网民提供优质的互联网综合服务。
-      div 了解更多
+      h3.about-title 以互联网为基础的科技及文化公司
+      p.about-wrap 1998年11月诞生于中国深圳，是一家以互联网为基础的科技与文化公司
+      p.about-wrap 我们的使命是 “通过互联网服务提升人类生活品质”。
+      p.about-wrap 腾讯秉承着 “一切以用户价值为依归” 的经营理念，致力于为亿万网民提供优质的互联网综合服务。
+      p.about-more(href="/culture") 了解更多>>
 
 
   div.container-wrapper
@@ -26,38 +23,22 @@ block content
           div.col-sm-6.col-md-4
             div.thumbnail
               img(src="" alt="")
-              div.caption 
-                h3=item.title
-                p=item.desc
-                p  
-                  a.btn.btn-success.btn-lg(href="#", role="button") leran more
-
-  
-  div.container-wrapper
-    div.container
-      div.row
-        div.col-sm-12
-          div#stuffs.carousel.slide(data-ride="carousel", data-interval="false")
-            div.carousel-inner(role="listbox")
-              each index in [1, 2, 3]
-                  div.item(class=index === 1 ? 'active' : '')
-                    div.container-fluid
-                      div.row
-                        each index in [1, 2, 3] 
-                          div.col-md-4
-                            a.profile-image
-                            div.text-content
-                              p.name Stefan Cosma @stefanbc
-                              p.desc Pushed my first commit using @code in under 15s. 💯
-            a.left.carousel-control(href="#stuffs", role="button", data-slide="prev")
-              span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-            a.right.carousel-control(href="#stuffs", role="button", data-slide="next")
-              span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+              div.caption.news(style="background-image: url(" + item.bg + ")")
+                p.news-title=item.title
+                p.news-desc=item.desc
+                p.news-more 了解更多 >
+              
+              div.news-bd
+                div.news-list.first
+                  a.news-tit(href="./articles/2000001.html", style="overflow-wrap: break-word;") 首届中国智慧交通大会在京召开，腾讯发布4款智慧出行新品
+                  div.news-date 2018/10/23
+                div.news-list
+                  a.news-tit(href="./articles/2000001.html", style="overflow-wrap: break-word;") 马化腾：做好数字助手，腾讯积极共建智能网联汽车生态
+                  div.news-date 2018/10/18
 
   div.container-wrapper
     div.container 
-      div.jumbotron
+      div.jumbotron.pro
         h1 做好数字助手 助力数字中国
-        p 扎根消费互联网  拥抱产业互联网
-        p
-          a.btn.btn-success.btn-lg(href="#", role="button") 了解更多产品服务
+        p#pro-desc 扎根消费互联网  拥抱产业互联网
+        p#pro-more 了解更多产品服务  >

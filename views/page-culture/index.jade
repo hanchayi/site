@@ -2,33 +2,56 @@ extends ../base/base
 
 block content
   div.container 
-    div.row  
-      div.col-md-2
-        nav.visible-md.visible-lg
-          ul.nav.nav-pills.nav-stacked
-            li
-              a(href="/test1") test1
-            li
-              a(href="/test2") test2
-      div.col-md-8
-        div.panel 
-          h3 公司动态
-          ul.list-group
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
-            li.list-group-item 2018年第三季度业绩【PDF file】
+      div.sub_sidebar
+        div.cover_layer(style="top: -1px;")
+        div.sub_sidebar_list 
+          div.sub_sidebar_list_item.active 核心理念
+          div.sub_sidebar_list_item 人才发展
+      div.article_content
+        div.company_item 
+          div.company_title 核心理念
+          div.idea_item.idea_vision
+            img.idea_img(src="https://www.tencent.com/images/culture/idea_1.jpg")
+            h3.idea_tit 愿景
+            h3.idea_subtit 最受尊敬的互联网企业
+            p.idea_txt 不断倾听和满足用户需求，引导并超越用户需求，赢得用户尊敬
+            p.idea_txt 通过提升品牌形象，使员工具有高度企业荣誉感，赢得员工尊敬
+            p.idea_txt 推动互联网行业的健康发展，与合作伙伴共成长，赢得行业尊敬
+
+          div.idea_item.idea_mission
+            img.idea_img(src="https://www.tencent.com/images/culture/idea_2.jpg")
+            h3.idea_tit 使命
+            h3.idea_subtit 通过互联网服务提升人类生活品质
+            p.idea_txt 不断倾听和满足用户需求，引导并超越用户需求，赢得用户尊敬
+            p.idea_txt 通过提升品牌形象，使员工具有高度企业荣誉感，赢得员工尊敬
+            p.idea_txt 推动互联网行业的健康发展，与合作伙伴共成长，赢得行业尊敬
+
+          div.idea_item.idea_vision
+            img.idea_img(src="https://www.tencent.com/images/culture/idea_3.jpg")
+            h3.idea_tit 管理理念
+            h3.idea_subtit 关心员工成长
+            p.idea_txt 为员工提供良好的工作环境和激励机制
+            p.idea_txt 完善员工培养体系和职业发展通道，使员工与企业同步成长
+            p.idea_txt 充分尊重和信任员工，不断引导和鼓励，使其获得成就的喜悦
+
+          div.idea_item.idea_mission
+            img.idea_img(src="https://www.tencent.com/images/culture/idea_4.jpg")
+            h3.idea_tit 经营理念
+            h3.idea_subtit 一切以用户价值为依归
+            p.idea_txt 正直
+            p.idea_txt 进取
+            p.idea_txt 创新
+        hr(style="clear:both;")
+        div.company_item.company_dev
+          div.company_title 人才发展
+            div.box_row 
+              div.item_title 腾讯学院
+              div.item_txt 2007年8月，腾讯学院正式成立，标志着腾讯员工培训发展工作进入新的里程碑。腾讯学院始终以成为互联网行业最受尊敬的企业大学为愿景，通过开展各类课程与培训，努力成为腾讯员工的成长顾问与业务团队的发展伙伴，为腾讯的现在培养人才，更为腾讯的明天培养人才。
+
+            div.box_row 
+              div.item_title 完善的员工发展机制
+              div.item_txt 腾讯从制度上保证了员工在公司内有多通道发展，共同打造员工职业发展体系，建立了员工管理和专业“双通道”的职业发展体系。
+
+            div.box_row 
+              div.item_title 完备的培养体系
+              div.item_txt 根据员工管理和专业的职业发展双通道体系，员工从一入司开始，公司就为大家设计了全方位的培养体系。

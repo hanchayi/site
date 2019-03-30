@@ -2,17 +2,14 @@ extends ../base/base
 
 block content
   div.container 
-    div.row  
-      div.col-md-2
-        nav.visible-md.visible-lg
-          ul.nav.nav-pills.nav-stacked
-            li
-              a(href="/test1") test1
-            li
-              a(href="/test2") test2
-      div.col-md-8
-        div.panel 
-          h3 公司动态
+      div.sub_sidebar
+        div.cover_layer(style="top: -1px;")
+        div.sub_sidebar_list 
+          div.sub_sidebar_list_item.active 公司动态
+          div.sub_sidebar_list_item 发展历程
+      div.article_content
+        div.company_item 
+          div.company_title 公司动态
           ul.list-group
             li.list-group-item 2018年第三季度业绩【PDF file】
             li.list-group-item 2018年第三季度业绩【PDF file】
@@ -32,3 +29,27 @@ block content
             li.list-group-item 2018年第三季度业绩【PDF file】
             li.list-group-item 2018年第三季度业绩【PDF file】
             li.list-group-item 2018年第三季度业绩【PDF file】
+        hr
+        div.company_item.company_dev
+          div.company_title 发展历程
+            div.dev_list
+              ul 
+                div.dev_item.first_item
+                  span.year 2015
+                  div.item_cont
+                    span.month 09
+                    p.item_txt 移动支付绑卡账户数超过2亿
+                    span.month 09
+                    p.item_txt 马化腾提出“互联网+”被写入政府工作报告成为国家战略
+                div.dev_item
+                  span.year 2014
+                  div.item_cont
+                    span.month 03
+                    p.item_txt QQ最高同时在线超过2亿
+                div.dev_item
+                  span.year 2013
+                  div.item_cont
+                    span.month 02
+                    p.item_txt 腾讯发布开放平台战略
+                   
+

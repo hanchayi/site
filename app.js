@@ -7,16 +7,12 @@ app.use(express.static('public'));
 app.set('views', path.join(__dirname, 'views'));
 
 const website = {
-  title: 'xxx',   // 公司名
+  title: '鹿谷教育',   // 公司名
   logo: '',       // 公司logo
   menus: [
     {
       label: '首页',
       path: '/'
-    },
-    {
-      label: '公司信息',
-      path: '/company'
     },
     {
       label: '企业文化',
@@ -27,9 +23,13 @@ const website = {
       path: '/system'
     },
     {
-      label: '投资者关系',
-      path: '/investor'
+      label: '公司信息',
+      path: '/company'
     }
+    // {
+    //   label: '投资者关系',
+    //   path: '/investor'
+    // }
   ]
 } 
 
@@ -40,15 +40,18 @@ app.get('/', function ({
   const news = [
     {
       title: '新科技',
-      desc: '构筑智慧未来'
+      desc: '构筑智慧未来',
+      bg: 'https://www.tencent.com/images/2x/index/news_bg_1.png'
     },
     {
       title: '新文化',
-      desc: '丰富精神生活'
+      desc: '丰富精神生活',
+      bg: 'https://www.tencent.com/images/2x/index/news_bg_2.png'
     },
     {
       title: '社会责任',
-      desc: '履行历史担当'
+      desc: '履行历史担当',
+      bg: 'https://www.tencent.com/images/2x/index/news_bg_3.png'
     }
   ]
 
